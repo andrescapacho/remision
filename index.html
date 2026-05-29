@@ -4,6 +4,8 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>RemisionPro — Sistema de Gestión de Remisiones</title>
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -18,8 +20,9 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:28px; height:28px;"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
       </div>
     </div>
-    <h2>RemisionPro</h2>
+    <h2>Remisiones</h2>
     <p>Inicia sesión para continuar</p>
+    
     
     <div class="form-group">
       <label class="form-label">Correo Electrónico</label>
@@ -28,6 +31,10 @@
     <div class="form-group mt-16">
       <label class="form-label">Contraseña</label>
       <input type="password" id="login-password" class="form-control" placeholder="••••••••">
+    </div>
+
+    <div style="text-align: right; margin-top: 8px;">
+      <a href="#" onclick="recuperarPassword()" style="font-size: 13px; color: var(--green-600); font-weight: 500; text-decoration: underline;">¿Olvidaste tu contraseña?</a>
     </div>
     <button class="btn btn-primary w-full mt-24" id="btn-login" onclick="iniciarSesion()" style="justify-content:center; padding:12px;">
       Ingresar al Sistema
